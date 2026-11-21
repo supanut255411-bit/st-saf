@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "stonerestore",
+  "version": "${version}",
+  "name": "StoneRestore",
+  "description": "Restores vanilla block/item textures while an \"everything is stone\" resource pack stays enabled. Client-side only.",
+  "authors": ["StoneRestore contributors"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.stonerestore.StoneRestoreClient"]
+  },
+  "mixins": [
+    {
+      "config": "stonerestore.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
